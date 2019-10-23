@@ -5,3 +5,334 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+@import "base/normalize";
+
+$white:#FFFFFF;
+
+body {
+    width: 1440px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    background-color: #2c2c2c;
+    color: #ffffff;
+
+}
+
+.header__logo {
+    padding-top: 35px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 100px;
+    padding-bottom: 39px;
+    font-weight: 900;
+    margin-right: 42px;
+}
+
+.header__nav {
+    padding-top: 35px;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-left: 1px solid #FFFFFF;
+    padding-left: 38px;
+
+}
+
+.nav__item {
+    font-size: 16px;
+    margin-right: 20px;
+
+    &-link {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.header__btn {
+    margin-top: 18px;
+    width: 229px;
+    border-radius: 100px;
+    border: solid 1px #ffffff;
+    background: none;
+    padding-top: 17px;
+    padding-bottom: 21px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 100px;
+    margin-left: 289px;
+}
+
+.galery__post {
+    margin-left: 156px;
+    margin-top: 132px;
+    display: flex;
+    padding-bottom: 126px;
+}
+
+.gallery__signature {
+    position: relative;
+    width: 20px;
+    display: block;
+    width: 20px;
+    height: 487px;
+    margin: 0;
+    padding: 0;
+}
+
+.signature {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 500px;
+    height: 19px;
+    transform: rotate(-90deg);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0.465em;
+    left: -255px;
+    top: 260px;
+}
+
+.gallery {
+    &__image {
+        border-radius: 5px;
+        border: none;
+        box-shadow: 18px 18px #C5C5C5, 36px 36px #EEEEEE;
+    }
+
+    &__description {
+        padding-top: 15px;
+        width: 505px;
+        font-size: 20px;
+        color: #333333;
+        margin-left: 156px;
+        margin-right: 100px;
+    }
+
+    &__heading {
+        position: relative;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 375px;
+            height: 3px;
+            top: 20px;
+            left: 125px;
+            background: linear-gradient(170.98deg, #5B0F34 2.84%, #D31313 95.22%), #3D3D3D;
+            border-radius: 2px;
+        }
+    }
+
+    &__other {
+        padding-top: 88px;
+        background-color: #f6f6f6;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 175px;
+        padding-left: 175px;
+        justify-content: center;
+    }
+
+    &__item {
+        margin-right: 67px;
+    }
+}
+
+.gallery__signature-wrap {
+    position: relative;
+    width: 20px;
+    display: block;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.post__signature {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 289px;
+    height: 17px;
+    transform: rotate(-90deg);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0.35em;
+    left: -170px;
+    top: 115px;
+    color: rgba(51, 51, 51, 0.6);
+}
+
+.post__info {
+    padding-top: 13px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 52px;
+}
+
+.info {
+    color: $white;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__slider {
+        width: 1440px;
+        height: 802px;
+        position: relative;
+
+        &__item-1 {
+            width: 100%;
+            height: 802px;
+            background-image: url("../img/photo_2019-10-22_19-33-30.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        &__item-2 {
+            width: 100%;
+            height: 802px;
+            background-image: url("../img/anime_art_devushka_v_kimono_4_08052517-600x383.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        &__item-3 {
+            width: 100%;
+            height: 802px;
+            background-image: url("../img/photo_2019-10-22_19-33-30.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        &__item-4 {
+            width: 100%;
+            height: 802px;
+            background-image: url("../img/AniAniAni_ArtArt_qlgfhwGGG-sj6-ksqQq-a5-aHD-Аниме-арт-девочка-под-дождём.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        &__item-5 {
+            width: 100%;
+            height: 802px;
+            background-image: url("../img/anime-para-liubov-art-krylia-anime-art-anime-para-anime-liub.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.9;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 75px;
+        font-weight: bold;
+        margin-top: 283px;
+    }
+
+    &__description {
+        width: 509px;
+        font-size: 20px;
+        line-height: 1.75;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 44px;
+    }
+
+    &__btn {
+        width: 275px;
+        position: relative;
+        border-radius: 100px;
+        background-color: #e65213;
+        background-image: linear-gradient(NaNdeg, #e65213 0%, #b14415 100%);
+        box-shadow: 0px 4px 1px #834E37;
+        border: none;
+        font-size: 16px;
+        color: $white;
+        text-align: right;
+        padding-right: 41px;
+        padding-top: 23px;
+        padding-bottom: 27px;
+        margin-bottom: 199px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 140px;
+            height: 91px;
+            background-image: url("../img/image.png");
+            background-repeat: no-repeat;
+            bottom: -18px;
+            right: 150px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 140px;
+            height: 91px;
+            background-image: url("../img/apple-pen-png-8.png");
+            background-repeat: no-repeat;
+            right: 95px;
+            top: 45px;
+        }
+    }
+
+}
+
+.post__img img {
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border-radius: 5px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    left: 590px;
+
+    &>li {
+        margin-right: 16px;
+        box-sizing: border-box;
+
+        &>button {
+            margin: 12px;
+            width: 15px;
+            height: 15px;
+            border-radius: 10px;
+            text-indent: -9999px;
+            background: none;
+            border: none;
+            background-color: $white;
+        }
+    }
+}
+
+.active {
+    border: 1px solid $white;
+}
